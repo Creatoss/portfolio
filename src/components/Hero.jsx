@@ -61,11 +61,10 @@ export default function Hero() {
   ];
 
   return (
-    <section className="h-screen flex  items-center justify-center   relative overflow-hidden">
+    <section id ="home"className="h-screen flex  items-center justify-center   relative overflow-hidden">
       
       <div className="container max-w-6xl mx-auto relative z-10">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 ">
-          {/* Text Content */}
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 m-5 ">
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
             <div className="backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20 animate-float">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">

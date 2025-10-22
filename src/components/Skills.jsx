@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   Code, 
   PenTool, 
-  Database,
+  Brain,
   Terminal
 } from "lucide-react";
 
@@ -46,13 +46,15 @@ const SkillsExperiences = () => {
       ]
     },
     {
-      title: "Databases",
-      icon: <Database className="h-6 w-6 text-primary" />,
-      skills: [
-        { name: "PostgreSQL", icon: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000", color: "bg-blue-100" },
-        { name: "Oracle Database", icon: "https://img.icons8.com/?size=100&id=39913&format=png&color=000000", color: "bg-red-100" },
-        { name: "MongoDB", icon: "https://img.icons8.com/?size=100&id=74402&format=png&color=000000", color: "bg-green-100" }
-      ]
+     title: "AI / Data Science",
+  icon: <Brain  className="h-6 w-6 text-primary" />,  // you may want to replace Database icon with something more AI-related
+  skills: [
+    { name: "NumPy",        icon: "https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000",   color: "bg-blue-100" },
+    { name: "Pandas",       icon: "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000",  color: "bg-green-100" },
+    { name: "Scikit-learn", icon: "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png", color: "bg-red-100" },
+    { name: "Matplotlib",   icon: "https://img.icons8.com/?size=100&id=TkX1totjFmAD&format=png&color=000000", color: "bg-purple-100" },
+  ]
+      
     }
   ]
 

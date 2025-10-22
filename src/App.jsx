@@ -1,188 +1,138 @@
 import React from "react";
 import Squares from "./components/Squares";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
 import Hero from "./components/Hero";
 import ShowcaseSection from "./components/ShowcaseSection";
 import Title from "./components/Titles";
 import SkillsExperienceSection from "./components/Skills";
 import ChromaGrid from "./components/ChromaGrid";
 import LogoLoop from "./components/LogoLoop";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
-  import Component from "./components/comp-531";
-
+import Contact from "./components/Contact";
 function App() {
+
   const techLogos = [
-  { node: <SiReact />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { name: "Java", icon: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000" },
+  { name: "C", icon: "https://img.icons8.com/?size=100&id=40669&format=png&color=000000" },
+  { name: "C++", icon: "https://img.icons8.com/?size=100&id=40670&format=png&color=000000" },
+  { name: "JavaScript", icon: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000" },
+  { name: "TypeScript", icon: "https://img.icons8.com/?size=100&id=Xf1sHBmY73hA&format=png&color=000000" },
+  { name: "Python", icon: "https://img.icons8.com/?size=100&id=lXPUSRCongH1&format=png&color=000000" },
+  { name: "HTML5", icon: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000" },
+  { name: "CSS3", icon: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000" },
+  { name: "Tailwind CSS", icon: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" },
+  { name: "React", icon: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" },
+  { name: "Angular", icon: "https://img.icons8.com/?size=100&id=6SWtW8hxZWSo&format=png&color=000000" },
+  { name: "Node.js", icon: "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" },
+  { name: "Express.js", icon: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000" },
+  { name: "Three.js", icon: "https://img.icons8.com/?size=100&id=j0beBVnUo5dZ&format=png&color=000000" },
+  { name: "Spring Boot", icon: "https://img.icons8.com/?size=100&id=90519&format=png&color=000000" },
+  { name: "Adobe Illustrator", icon: "https://img.icons8.com/?size=100&id=6nVfKqkrGRxh&format=png&color=000000" },
+  { name: "Adobe Photoshop", icon: "https://img.icons8.com/?size=100&id=13677&format=png&color=000000" },
+  { name: "Figma", icon: "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" },
+  { name: "NumPy", icon: "https://img.icons8.com/?size=100&id=aR9CXyMagKIS&format=png&color=000000" },
+  { name: "Pandas", icon: "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000" },
+  { name: "Scikit-learn", icon: "https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" },
+  { name: "Matplotlib", icon: "https://img.icons8.com/?size=100&id=TkX1totjFmAD&format=png&color=000000" }
 ];
+
 
   const items = [
     {
       image: "/images/Eventini.jpg",
-      title: "Sarah Johnson",
-      subtitle: "Frontend Developer",
-      handle: "@sarahjohnson",
-      borderColor: "#06B6D4",
-      gradient: "#c1ddfe",
-      url: "https://github.com/sarahjohnson",
-      type: "Web App",
-      description: "Developed a responsive web application for event planning.",
-      date: "2023-08-10",
-      technologies: ["React", "Tailwind CSS", "Firebase"],
+      title: "Eventini",
+      subtitle: "Academic Project",
+      borderColor: "#0284C7",
+      gradient: "#000128",
+      url: "https://github.com/Creatoss/Eventini_front.git",
+      type: "Mobile App",
+      description: "Eventini is an Android app developed in Java with a Spring Boot backend that lets users browse Tunisian cultural events, view detailed information, book tickets, manage their reservations and favorites, and sign in to their account, while the backend ensures reliable and up-to-date data on shows, artists, venues, and bookings.",
+      date: "02-05-2025",
+      technologies: ["Java", "Spring Boot", "Android XML"],
       images: [
         "/images/Eventini.jpg",
-        "https://i.pravatar.cc/300?img=1",
-        "https://i.pravatar.cc/300?img=2"
+
       ]
     },
     {
-      image: "https://i.pravatar.cc/300?img=2",
-      title: "Mike Chen",
-      subtitle: "Backend Engineer",
-      handle: "@mikechen",
+      title: "Log Monitor ",
+      subtitle: "Academic Project",
       borderColor: "#0EA5E9",
-      gradient: "#c1ddfe",
-      url: "https://linkedin.com/in/mikechen",
-      type: "Web App",
-      description: "Built a scalable API for a social media platform.",
-      date: "2023-04-25",
-      technologies: ["Node.js", "Express", "MongoDB"],
+      gradient: "#000128",
+      
+      url: "https://github.com/Creatoss/System-Log-Monitor-.git",
+      type: "Software",
+      description: "This project is a centralized log monitoring solution that collects logs from multiple Linux client machines and sends them to a central RHEL server. It allows administrators to monitor system activity, search and filter logs, and analyze events through a real-time Next.js web dashboard",
+      date: "2025-04-25",
+      technologies: ["React", "RsysLog", "FastApi"],
       images: [
-        "https://i.pravatar.cc/300?img=2",
-        "https://i.pravatar.cc/300?img=3"
+        "/images/watchlogs.jpg",
+
       ]
     },
     {
-      image: "https://i.pravatar.cc/300?img=3",
-      title: "Emma Davis",
-      subtitle: "Mobile Developer",
-      handle: "@emmadavis",
+      title: "Spectacle DB ",
+      subtitle: "Academic Project",
       borderColor: "#38BDF8",
-      gradient: "#c1ddfe",
-      url: "https://github.com/emmadavis",
-      type: "Mobile App",
-      description: "Created a cross-platform mobile app for task management.",
-      date: "2023-10-05",
-      technologies: ["Flutter", "Dart", "Firebase"],
+      gradient: "#000128",
+      url: "https://github.com/Creatoss/Data_base_system_project.git",
+      type: "Software",
+      description: "This project is a Spectacle and Venue Management System built using a relational database with PL/SQL procedures, designed to manage performance venues, shows, and program segments. It enables administrators to add, modify, cancel, and search for venues and events while enforcing business rules through triggers and procedures. ",
+      date: "2024-11-05",
+      technologies: ["PL/SQL", "Oracle DataBase"],
       images: [
-        "https://i.pravatar.cc/300?img=3",
-        "https://i.pravatar.cc/300?img=4",
-        "https://i.pravatar.cc/300?img=5"
+        "/images/SpectacleSystem.png",
+
       ]
     },
     {
-      image: "/images/japan.png",
-      title: "Liam Brown",
-      subtitle: "UI/UX Designer",
-      handle: "@liambrown",
-      borderColor: "#22D3EE",
-      gradient: "#c1ddfe",
-      url: "https://dribbble.com/liambrown",
-      type: "Design",
-      description: "Designed user interfaces for a fintech application.",
-      date: "2023-02-15",
-      technologies: ["Figma", "Sketch", "Adobe XD"],
-      images: [
-        "/images/japan.png",
-        "https://i.pravatar.cc/300?img=6"
-      ]
-    },
-    {
-      image: "https://i.pravatar.cc/300?img=5",
-      title: "Olivia Smith",
-      subtitle: "Data Scientist",
-      handle: "@oliviasmith",
+      title: "ENIConnect",
+      subtitle: "Academic Project",
       borderColor: "#0284C7",
-      gradient: "#c1ddfe",
-      url: "https://kaggle.com/oliviasmith",
-      type: "AI",
-      description: "Developed a predictive model for customer churn.",
-      date: "2023-12-01",
-      technologies: ["Python", "Scikit-learn", "Pandas"],
-      images: [
-        "https://i.pravatar.cc/300?img=5",
-        "https://i.pravatar.cc/300?img=7",
-        "https://i.pravatar.cc/300?img=8"
-      ]
-    },
-    {
-      image: "https://i.pravatar.cc/300?img=6",
-      title: "Noah Wilson",
-      subtitle: "Cloud Architect",
-      handle: "@noahwilson",
-      borderColor: "#0369A1",
-      gradient: "#1f2937",
-      url: "https://aws.amazon.com/",
+      gradient: "#000128",
+      url: "",
       type: "Web App",
-      description: "Optimized cloud infrastructure for high availability.",
-      date: "2023-06-30",
-      technologies: ["AWS", "Terraform", "Docker"],
+      description: "This project is a web-based Student Survey and Feedback Platform designed to systematically gather student opinions on courses and academic services. It provides a centralized system for distributing surveys, collecting feedback, and analyzing student responses to help administrators identify strengths and areas for improvement. Built with NextJS, Spring Boot, and PostgreSQL . ",
+      date: "2025-04-11",
+      technologies: ["Spring framework", "PostgreSQL"],
       images: [
-        "https://i.pravatar.cc/300?img=6",
-        "https://i.pravatar.cc/300?img=9"
+        "/images/Enniconnect.jpg",
+
       ]
     },
     {
-      image: "https://i.pravatar.cc/300?img=7",
-      title: "Ava Taylor",
-      subtitle: "Mobile Developer",
-      handle: "@avataylor",
+      title: "NoteHub Backend",
+      subtitle: "Personal Project",
+      borderColor: "#0369A1",
+      gradient: "#000128",
+      url: "https://github.com/Creatoss/NoteHub_Backend.git",
+      type: "Web App",
+      description: "This is a personal project built with Express.js to understand web development concepts. It is a backend application that uses MongoDB for data storage and implements authentication using JWT (JSON Web Tokens). The backend serves an Angular frontend that allows family members to add, view, and delete notes for personal and family use. The project is still in development as I continue learning and improving it.",
+      date: "2024-06-30",
+      technologies: ["ExpressJS", "NodeJS", "JWT"],
+      images: [
+         "/images/NoteHub.png"
+      ]
+    },
+    {
+      title: "Pitchy ",
+      subtitle: "Internship Project",
       borderColor: "#0EA5E9",
-      gradient: "#1f2937",
-      url: "https://github.com/avataylor",
-      type: "Mobile App",
-      description: "Built a mobile app for real-time messaging.",
-      date: "2023-09-20",
-      technologies: ["React Native", "GraphQL", "Apollo"],
-      images: [
-        "https://i.pravatar.cc/300?img=7",
-        "https://i.pravatar.cc/300?img=10",
-        "https://i.pravatar.cc/300?img=11"
-      ]
-    },
-    {
-      image: "https://i.pravatar.cc/300?img=8",
-      title: "James Lee",
-      subtitle: "AI Researcher",
-      handle: "@jameslee",
-      borderColor: "#06B6D4",
-      gradient: "#1f2937",
-      url: "https://linkedin.com/in/jameslee",
+      gradient: "#000128",
+      url: "",
       type: "AI",
-      description: "Researched NLP models for sentiment analysis.",
-      date: "2023-07-15",
-      technologies: ["Python", "TensorFlow", "NLTK"],
+      description: "This project, PITCHI, is an AI-powered sales meeting simulator. It creates realistic practice sessions where users interact with a dynamic AI client avatar. The platform uses live analysis of a user's speech, tone, and facial expressions to provide real-time coaching feedback, helping sales teams improve their skills in a risk-free environment",
+      date: "2025-08-15",
+      technologies: ["LLMs", "ThreeJs", "RAG"],
       images: [
-        "https://i.pravatar.cc/300?img=8",
-        "https://i.pravatar.cc/300?img=12"
+     "/images/PitchiMockUp.png"
       ]
     },
-    {
-      image: "https://i.pravatar.cc/300?img=9",
-      title: "Sophia Martinez",
-      subtitle: "Product Designer",
-      handle: "@sophiamartinez",
-      borderColor: "#38BDF8",
-      gradient: "#1f2937",
-      url: "https://dribbble.com/sophiamartinez",
-      type: "Design",
-      description: "Designed a user-friendly dashboard for analytics.",
-      date: "2023-05-01",
-      technologies: ["Figma", "Adobe Illustrator"],
-      images: [
-        "https://i.pravatar.cc/300?img=9",
-        "https://i.pravatar.cc/300?img=13",
-        "https://i.pravatar.cc/300?img=14"
-      ]
-    }
+
   ];
 
   return (
     <div className="flex flex-col w-full bg-blue-50 relative overflow-hidden">
-      <div className="fixed inset-0 z-0 w-full bg-blue-300 overflow-hidden">
+      <div className="fixed inset-0 z-0 w-full bg-blue-200 overflow-hidden">
         <Squares
           speed={0.1}
           squareSize={40}
@@ -199,34 +149,24 @@ function App() {
         <Title title="Skills and Expertise" />
         <SkillsExperienceSection />
             <LogoLoop
-              logos={techLogos}
+              logos={techLogos.map(t => ({ src: t.icon, alt: t.name, title: t.name }))}
               speed={80}
               direction="left"
               logoHeight={48}
               gap={40}
               pauseOnHover
               scaleOnHover
-              fadeOut
-              fadeOutColor="#ffffff"
               ariaLabel="Technology partners"
             />
         <Title title="Projects" />
-        <ChromaGrid
+        <ChromaGrid 
           items={items}
           radius={300}
           damping={0.45}
           fadeOut={0.6}
           ease="power3.out"
         />
-        <Title title="Professional experience" />
-        <Component />
-          <Title title="Projects" />
-
-      </div>
-
-      {/* Sidebar */}
-      <div className="relative z-30">
-        <Sidebar />
+        <Contact />
       </div>
     </div>
   );

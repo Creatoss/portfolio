@@ -23,24 +23,21 @@ const ShowcaseSection = () => {
             cardDistance={60}
             verticalDistance={70}
             delay={4000}
-            pauseOnHover={false}
-            width={600} // optional
+            pauseOnHover={true}
+            width={600} 
           >
             {[1, 2, 3].map((num) => (
               <Card key={num}>
                 <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-300 rounded-xl border border-white/30 shadow-xl p-8">
-                  <div className="flex items-center justify-center w-16 h-16 rounded-2xl mb-6">
-                    <span className="text-2xl font-bold text-blue-950">S</span>
-                  </div>
-                  <h3 className="text-3xl font-bold text-gray-800 mb-4">
-                    {num === 1 ? "Smooth" : num === 2 ? "Stylish" : "Simple"}
-                  </h3>
+                  <div className="flex items-center justify-center w-16 h-16 rounded-2xl mb-6 ml-3 ">
+                    <span className="text-2xl font-bold text-blue-500">{num === 1 ? "About Me " : num === 2 ? "Graphic Designer " : "CS enthusiast"}</span>
+                   </div>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {num === 1
-                      ? "Fluid animations and seamless transitions that enhance user experience."
+                      ? "Away from tech, I’m passionate about video games and the gaming community. I also love sports, especially football. I’m a calm person who enjoys laughing, spending quality time with friends, and connecting with nature."
                       : num === 2
-                      ? "Clean layouts and modern design principles applied throughout."
-                      : "A minimal approach that keeps the focus on what matters most."}
+                      ? "I’m a graphic designer passionate about the art of creating visual content for both online and offline media, with experience in Adobe Illustrator, Adobe Photoshop, and Figma."
+                      : "I’m a third-year Computer Science student at the National School of Engineering in Carthage, passionate about cloud computing, artificial intelligence, and web development."}
                   </p>
                   <div className="text-8xl font-bold text-blue-500/20 text-right">{num}</div>
                 </div>
