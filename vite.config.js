@@ -4,6 +4,6 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Set base for GitHub Pages: use "/" for user/organization pages, or "/<repo>/" for project pages
-  base: "/",
+  // Set base for GitHub Pages project site (repo name)
+  base: "/portfolio/",
 });
