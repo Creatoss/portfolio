@@ -1,22 +1,23 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'HOME', href: '#home' },
-    { name: 'PROJECTS', href: '#projects' },
-    { name: 'SKILLS', href: '#skills' },
-    { name: 'CONTACT', href: '#contact' },
+    { name: "HOME", href: "#home" },
+    { name: "PROJECTS", href: "#projects" },
+    { name: "SKILLS", href: "#skills-roadmap" },
+    { name: "CERTIFICATIONS", href: "#certifications" },
+    { name: "CONTACT", href: "#contact" },
   ];
 
   const handleScroll = (href) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     }
     setIsMenuOpen(false);
