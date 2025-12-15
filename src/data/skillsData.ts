@@ -237,7 +237,7 @@ export const certifications = [
     description: "Fundamentals of AI",
     date: "October 2025",
     link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=33935F1061B3518C13C5A07033F7A1076C3C4E4D679F95F94174EBE58F6FDF04",
-    image: "./images/Oracle-Gen-ai.png",
+    image: "/portfolio/images/Oracle-Gen-ai.png",
     company: "Oracle",
     rightLogo:
       "https://img.icons8.com/?size=100&id=38298&format=png&color=000000",
@@ -248,7 +248,7 @@ export const certifications = [
     description: "Amazon Web Services - Cloud Computing",
     date: "October 2025",
     link: "https://www.credly.com/go/O3gMLj7s",
-    image: "./images/AWS-foundations.png",
+    image: "/portfolio/images/AWS-foundations.png",
     company: "AWS",
     rightLogo:
       "https://img.icons8.com/?size=100&id=G0CnLqqcRBXl&format=png&color=000000",
@@ -259,7 +259,7 @@ export const certifications = [
     description: "NLP - Tokenization",
     date: "November 2025",
     link: "https://www.credly.com/badges/6cdbff01-8696-4e84-afa6-9db47a38d7b9/public_url",
-    image: "./images/IBM-GEN-AI.png",
+    image: "/portfolio/images/IBM-GEN-AI.png",
     company: "Credly",
     rightLogo:
       "https://img.icons8.com/?size=100&id=24662&format=png&color=000000",
@@ -270,7 +270,7 @@ export const certifications = [
     description: "UNET",
     date: "December 2025",
     link: "http://learn.nvidia.com/certificates?id=Q8hw6HcnRKeHNNeFaib1Dw#",
-    image: "./images/Nvidea-Gen-AI-with-Diffusion-models.png",
+    image: "/portfolio/images/Nvidea-Gen-AI-with-Diffusion-models.png",
     company: "NVIDIA",
     rightLogo:
       "https://img.icons8.com/?size=100&id=yqf95864UzeQ&format=png&color=000000",
@@ -282,7 +282,7 @@ export const certifications = [
     date: "December 2025",
     link: "https://learn.nvidia.com/certificates?id=hIQV4JoTRPigatLuwAzcqA#",
     image:
-      "./images/Fundamentals_Of_Accelerated_Data_Science_certification.png",
+      "/portfolio/images/Fundamentals_Of_Accelerated_Data_Science_certification.png",
     company: "NVIDIA",
     rightLogo:
       "https://img.icons8.com/?size=100&id=yqf95864UzeQ&format=png&color=000000",
@@ -291,7 +291,7 @@ export const certifications = [
 ];
 export const items = [
   {
-    image: "/images/Eventini.jpg",
+    image: "/portfolio/images/Eventini.jpg",
     title: "Eventini",
     subtitle: "Academic Project",
     borderColor: "#0284C7",
@@ -302,7 +302,7 @@ export const items = [
       "Eventini is an Android app developed in Java with a Spring Boot backend that lets users browse Tunisian cultural events, view detailed information, book tickets, manage their reservations and favorites, and sign in to their account, while the backend ensures reliable and up-to-date data on shows, artists, venues, and bookings.",
     date: "02-05-2025",
     technologies: ["Java", "Spring Boot", "Android XML"],
-    images: ["/images/Eventini.jpg"],
+    images: ["/portfolio/images/Eventini.jpg"],
   },
   {
     title: "Log Monitor ",
@@ -316,7 +316,7 @@ export const items = [
       "This project is a centralized log monitoring solution that collects logs from multiple Linux client machines and sends them to a central RHEL server. It allows administrators to monitor system activity, search and filter logs, and analyze events through a real-time Next.js web dashboard",
     date: "2025-04-25",
     technologies: ["React", "RsysLog", "FastApi"],
-    images: ["/images/watchlogs.jpg"],
+    images: ["/portfolio/images/watchlogs.jpg"],
   },
   {
     title: "Spectacle DB ",
@@ -329,7 +329,7 @@ export const items = [
       "This project is a Spectacle and Venue Management System built using a relational database with PL/SQL procedures, designed to manage performance venues, shows, and program segments. It enables administrators to add, modify, cancel, and search for venues and events while enforcing business rules through triggers and procedures. ",
     date: "2024-11-05",
     technologies: ["PL/SQL", "Oracle DataBase"],
-    images: ["/images/SpectacleSystem.png"],
+    images: ["/portfolio/images/SpectacleSystem.png"],
   },
   {
     title: "ENIConnect",
@@ -342,7 +342,7 @@ export const items = [
       "This project is a web-based Student Survey and Feedback Platform designed to systematically gather student opinions on courses and academic services. It provides a centralized system for distributing surveys, collecting feedback, and analyzing student responses to help administrators identify strengths and areas for improvement. Built with NextJS, Spring Boot, and PostgreSQL . ",
     date: "2025-04-11",
     technologies: ["Spring framework", "PostgreSQL"],
-    images: ["/images/Enniconnect.jpg"],
+    images: ["/portfolio/images/Enniconnect.jpg"],
   },
   {
     title: "NoteHub Backend",
@@ -355,7 +355,7 @@ export const items = [
       "This is a personal project built with Express.js to understand web development concepts. It is a backend application that uses MongoDB for data storage and implements authentication using JWT (JSON Web Tokens). The backend serves an Angular frontend that allows family members to add, view, and delete notes for personal and family use. The project is still in development as I continue learning and improving it.",
     date: "2024-06-30",
     technologies: ["ExpressJS", "NodeJS", "JWT"],
-    images: ["/images/NoteHub.png"],
+    images: ["/portfolio/images/NoteHub.png"],
   },
   {
     title: "Pitchy ",
@@ -368,6 +368,6 @@ export const items = [
       "This project, PITCHI, is an AI-powered sales meeting simulator. It creates realistic practice sessions where users interact with a dynamic AI client avatar. The platform uses live analysis of a user's speech, tone, and facial expressions to provide real-time coaching feedback, helping sales teams improve their skills in a risk-free environment",
     date: "2025-08-15",
     technologies: ["LLMs", "ThreeJs", "RAG"],
-    images: ["/images/PitchiMockUp.png"],
+    images: ["/portfolio/images/PitchiMockUp.png"],
   },
 ];

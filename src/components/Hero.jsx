@@ -88,7 +88,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-96 h-96 md:w-[450px] md:h-[450px] rounded-full overflow-hidden border-4 border-white shadow-2xl ">
                 <img 
-                  src="/profilepic.png" 
+                  src="/portfolio/profilepic.png" 
                   alt="Mohamed Ghaith Hamzaoui" 
                   className="w-full h-full object-cover"
                 />
